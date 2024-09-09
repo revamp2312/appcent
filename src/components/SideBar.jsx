@@ -55,7 +55,7 @@ const SideBar = ({ open }) => {
             </div>
 
             <div className="w-full">
-              <Link href="/demo" className="w-full">
+              <Link href="/contact" className="w-full">
                 <div className="rounded px-6 py-3 bg-primary-btn-bg text-white font-bold w-full text-center">
                   Contact us
                 </div>
