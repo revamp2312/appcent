@@ -6,9 +6,9 @@ import { FaPhone } from "react-icons/fa6";
 import { IoPerson } from "react-icons/io5";
 const CtaBanner = ({ data }) => {
   return (
-    <div className="flex justify-center items-center m-auto w-full px-[70px] py-12 ">
-      <div className="w-full max-w-[1440px] flex flex-col justify-center items-start shadow-ctaBannerBoxShadow border-[0.5px] border-solid border-[var(--background-color)] rounded-lg">
-        <div className="flex justify-center items-center gap-12 pl-12 rounded-t-lg">
+    <div className="flex justify-center items-center m-auto w-full px-6 tablet:px-14 laptop:px-[70px] py-12 ">
+      <div className="w-full max-w-[1440px] flex flex-col gap-6 justify-center items-start shadow-ctaBannerBoxShadow border-[0.5px] border-solid border-[var(--background-color)] rounded-lg laptop:gap-0">
+        <div className="flex flex-col justify-center w-full items-center gap-12 p-6 tablet:p-12 laptop:p-0 laptop:pl-12 rounded-t-lg laptop:flex-row">
           <div className="flex flex-col gap-12 justify-center items-start max-w-[612px] w-full">
             <div className="flex flex-col gap-1 justify-center items-start">
               <div><h1 className="text-[var(--accent-color)]">{data.title}</h1></div>
@@ -26,7 +26,7 @@ const CtaBanner = ({ data }) => {
           <div > <Image className="rounded-tr-lg" src={data.img} alt="Cta Banner" width={610} height={390} /></div>
         </div>
         <div className="flex justify-center items-center w-full bg-primary-btn-bg rounded-b-lg">
-          <div className="flex flex-[3] justify-between items-center px-6 w-full">
+          <div className="flex flex-col flex-[3] justify-between items-start px-6 w-full laptop:flex-row laptop:items-center">
             <div className="flex gap-4 justify-center items-center text-white px-6 py-4">
               <div className="w-6 h-6"><MdEmail size={24}/></div>
               <div className="flex flex-col gap-1 text-white">
@@ -51,7 +51,7 @@ const CtaBanner = ({ data }) => {
               </div>
             </div>
           </div>
-          <div className="flex flex-[1] bg-white">
+          <div className="flex-[1] bg-white hidden laptop:flex">
             <Image className="rounded-br-lg" src="/ctaBanner/ctaBuilding.png" width={276} height={126} alt="Cta-Building"/>
           </div>
         </div>

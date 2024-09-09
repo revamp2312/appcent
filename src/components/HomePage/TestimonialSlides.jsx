@@ -5,11 +5,11 @@ import { VscQuote } from "react-icons/vsc"
 
 export const FirstSlide=({gotoNextSlide})=>{
     return(
-        <div className="flex gap-6 justify-center items-center bg-white p-12 w-full">
-        <div>
-            <Image src="/testimonial/Testimonial1.png" alt="Testimonial iamge" width={450} height={524} />
+        <div className="flex flex-col laptop:flex-row gap-6 justify-center items-center bg-white p-6 laptop:p-12 w-full">
+        <div className="w-full hidden tablet:block">
+            <Image className="w-full" src="/testimonial/Testimonial1.png" alt="Testimonial iamge" width={450} height={524} />
         </div>
-        <div className="flex flex-col gap-6 justify-center items-center p-12 text-[var(--accent-color)] max-w-[678px] w-full ">
+        <div className="flex flex-col gap-6 justify-center items-center  laptop:p-12 text-[var(--accent-color)] max-w-[678px] w-full ">
             <div className="flex flex-col gap-4 justify-center items-center">
             <div className="flex justify-between items-center w-full">
                 <div><VscQuote size={40} /></div>
@@ -36,11 +36,11 @@ export const FirstSlide=({gotoNextSlide})=>{
 
 export const SecondSlide=({gotoNextSlide})=>{
     return(
-        <div className="flex gap-6 justify-center items-center bg-white p-12 w-full">
-        <div>
-            <Image src="/testimonial/Testimonial2.png" alt="Testimonial iamge" width={450} height={524} />
+        <div className="flex flex-col laptop:flex-row gap-6 justify-center items-center bg-white p-6 laptop:p-12 w-full">
+        <div  className="w-full hidden tablet:block">
+            <Image  className="w-full" src="/testimonial/Testimonial2.png" alt="Testimonial iamge" width={450} height={524} />
         </div>
-        <div className="flex flex-col gap-6 justify-center items-center p-12 text-[var(--accent-color)] max-w-[678px] w-full ">
+        <div className="flex flex-col gap-6 justify-center items-center p-6 laptop:p-12 text-[var(--accent-color)] max-w-[678px] w-full ">
             <div className="flex flex-col gap-4 justify-center items-center">
             <div className="flex justify-between items-center w-full">
                 <div><VscQuote size={40} /></div>

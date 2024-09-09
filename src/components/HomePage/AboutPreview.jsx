@@ -3,12 +3,12 @@ import Link from "next/link"
 import { FaArrowRightLong } from "react-icons/fa6";
 const AboutPreview = () => {
   return (
-    <div className="flex justify-center items-center m-auto w-full px-[70px] py-12 bg-[var(--primary-color)]">
+    <div className="flex justify-center items-center m-auto w-full px-6 tablet:px-14 laptop:px-[70px] py-12 bg-[var(--primary-color)]">
       <div className="w-full max-w-[1440px] flex flex-col justify-center items-center gap-12">
-        <div>
-            <Image src="/homepage/aboutPreview.png" alt="About-Preview" width={1440} height={230}/>
+        <div className="h-[150px] tablet:h-[230px]">
+            <Image className="h-full" src="/homepage/aboutPreview.png" alt="About-Preview" style={{objectFit: "cover"}} width={1440} sizes="(max-height: 768px) 150px, (max-width: 1200px) 230px, 230px" 	height={500}/>
         </div>
-        <div className="flex gap-6 justify-center items-start">
+        <div className="flex flex-col gap-6 justify-center items-start laptop:flex-row">
             <div className="flex flex-1"><h2>Elevating Enterprises,
             Shaping Futures: Our Journey of Excellence and Innovation</h2></div>
             <div className="flex flex-col gap-12 items-start justify-center flex-1">

@@ -1,5 +1,5 @@
 #employee-testimonial-Section.embla {
-    max-width: 48rem;
+    max-width: 679px;
     margin: auto;
     --slide-height: 19rem;
     --slide-spacing: 1rem;
@@ -18,4 +18,11 @@
     flex: 0 0 var(--slide-size);
     min-width: 0;
     padding-left: var(--slide-spacing);
+  }
+
+  @media screen and (max-width:1200px) {
+    #employee-testimonial-Section.embla {
+      max-width: 100%;
+      width: 100%;
+    }
   }

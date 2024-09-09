@@ -3,11 +3,14 @@ import Link from "next/link";
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-const CgCompanies = () => {
+const 
+
+
+CgCompanies = () => {
   return (
-    <div className="flex justify-center items-center m-auto w-full px-[70px] py-12 bg-[var(--primary-color)]">
-      <div className="w-full max-w-[1440px] flex justify-center items-center gap-6 ">
-        <div className="flex flex-col gap-2 justify-center items-start max-w-[612px] w-full">
+    <div className="flex justify-center items-center m-auto w-full px-6 tablet:px-14 laptop:px-[70px] py-12 bg-[var(--primary-color)]">
+      <div className="w-full max-w-[1440px] flex flex-col justify-center items-center gap-6 h-full laptop:flex-row">
+        <div className="flex flex-col gap-2 justify-center items-start w-full laptop:max-w-[612px] ">
           <div>
             <h2>We Are Part of a Bigger and More Exciting Group</h2>
           </div>
@@ -20,7 +23,7 @@ const CgCompanies = () => {
             </p>
           </div>
         </div>
-        <div className="w-[294px] flex flex-col justify-center items-center gap-9 p-6 bg-infocentric-bg rounded">
+        <div className="w-full laptop:w-[294px] flex flex-col justify-center items-center gap-9 p-6 bg-infocentric-bg rounded h-full min-h-[342px]">
           <div>
             <Image
               src="/infocentrc-logo.png"
@@ -44,7 +47,7 @@ const CgCompanies = () => {
             </Link>
           </div>
         </div>
-        <div className="w-[294px] flex flex-col justify-center items-center gap-9 p-6 bg-white rounded">
+        <div className="w-full laptop:w-[294px] flex flex-col justify-start items-center gap-9 p-6 bg-white rounded h-full min-h-[342px]">
           <div>
             <Image
               src="/blink-logo.png"
@@ -55,8 +58,7 @@ const CgCompanies = () => {
           </div>
           <div>
             <p className="font-bold text-center">
-              The Identity Access Management Leader in the Philippines. Trusted
-              by the top Enterprises in the country.
+            A Customer Experience Leader
             </p>
           </div>
           <div>

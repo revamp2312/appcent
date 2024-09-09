@@ -5,7 +5,6 @@ const BlogCard = ({ blogdata }) => {
   const imgurl = blogdata?.attributes?.imgSrc?.data?.attributes?.url;
   const slug=blogdata?.attributes.slug
 
-console.log(slug);
 
   return (
     <div className="flex justify-center items-center w-full h-full">

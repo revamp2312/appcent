@@ -5,14 +5,14 @@ import InsightPreviewCarousel from './InsightPreviewCarousel'
 
 const InsightPreview = () => {
   return (
-    <div className="flex justify-center items-center m-auto w-full px-[70px] py-12">
+    <div className="flex justify-center items-center m-auto w-full px-6 tablet:px-14 laptop:px-[70px] py-12 ">
       <div className="w-full max-w-[1440px] flex flex-col justify-center items-center gap-12">
-            <div className="flex flex-col gap-16 justify-center items-center">
-                <div className="flex flex-col gap-2 justify-center items-center">
+            <div className="flex flex-col gap-16 justify-center items-center w-full">
+                <div className="flex flex-col gap-2 justify-center items-center text-center">
                     <div><h2>Insights and Innovations: The Appcentric Advantage</h2></div>
                     <div><p>Explore the Latest in SAP Solutions, Success Stories, and Technological Breakthroughs</p></div>
                 </div>
-                <div>
+                <div className="w-full">
                     <InsightPreviewCarousel />
                 </div>
             </div>

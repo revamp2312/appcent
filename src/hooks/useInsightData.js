@@ -4,7 +4,7 @@ import { useState} from "react";
 
 
 export default function useInsightData(){
-    const [menuSelected,setMenuSelected] =useState("blogs")
+    const [menuSelected,setMenuSelected] =useState("Blogs")
 
     return {menuSelected,setMenuSelected}
 
