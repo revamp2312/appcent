@@ -4,6 +4,9 @@ import { RiArrowRightSLine } from "react-icons/ri";
 import { truncate } from "lodash";
 import CtaBanner from "@/components/CtaBanner";
 import { ctaBannerData } from "@/utils/cta-banner";
+
+
+
 export async function getBlog(slug) {
   try {
     const res = await fetch(`http://localhost:1337/api/blogs/${slug}`);
@@ -47,7 +50,7 @@ const page = async ({ params }) => {
             <h2>{blogData?.data?.attributes?.title}</h2>
           </div>
           <div>
-            <p>
+            <p className="text-center">
               {blogData?.data?.attributes?.DateInText} by Appcentric Solutions,
               Inc.
             </p>
@@ -55,7 +58,7 @@ const page = async ({ params }) => {
         </div>
         <div className="max-w-[1248px] w-full  h-full">
           <Image
-            className="w-full max-h-[500px] object-cover"
+            className="w-full max-h-[500px] object-cover rounded"
             objectFit="cover"
             src={imgurl}
             alt="Blog-img"
@@ -76,3 +79,22 @@ const page = async ({ params }) => {
 };
 
 export default page;
+
+
+export async function generateMetadata({ params }) {
+console.log("params",params);
+const blogData = await getBlog(params?.slug);
+const imgurl =
+  "http://127.0.0.1:1337" +
+  blogData?.data?.attributes?.imgSrc?.data?.attributes?.url;
+  const title= blogData?.data?.attributes?.title;
+
+  
+  return {
+    title: title,
+    openGraph: {
+      images: imgurl,
+    },
+
+  }
+}

@@ -3,11 +3,11 @@ import { FiSearch } from "react-icons/fi";
 import EachMenu from "./EachMenu";
 import { Search } from "../custom/Search";
 
-const BlogMenu = ({ setMenuSelected, categories,menuSelected }) => {
+const BlogMenu = ({ setMenuSelected, categories, menuSelected }) => {
   return (
-    <div className="flex justify-center items-center m-auto w-full px-[70px] h-[80px]">
-      <div className="w-full max-w-[1440px] flex  justify-between items-center">
-        <div className="flex gap-12 justify-center items-center">
+    <div className="flex justify-center items-center h-[80px] m-auto w-full px-6 tablet:px-14 laptop:px-[70px] ">
+      <div className="w-full max-w-[1440px] flex flex-col-reverse justify-between items-start gap-4 laptop:gap-0 laptop:items-center laptop:flex-row">
+        <div className="flex gap-8  tablet:gap-12 justify-center items-center">
           {categories?.data.map((each, index) => {
             return (
               <EachMenu
@@ -19,9 +19,9 @@ const BlogMenu = ({ setMenuSelected, categories,menuSelected }) => {
             );
           })}
         </div>
-        <div className="flex  justify-center items-center  relative min-w-[347px] ">
-          <FiSearch size={20} className="absolute left-1 top-[34%] bottom-0 " />
-       <Search />
+        <div className="flex  justify-start items-center  relative w-full tablet:w-auto  tablet:min-w-[347px] ">
+          <FiSearch size={20} className="absolute left-1 top-[34%] bottom-0 " color="#767676" />
+          <Search />
         </div>
       </div>
     </div>

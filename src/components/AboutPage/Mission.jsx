@@ -20,7 +20,7 @@ const Mission = () => {
         </div>
         <div className="h-[150px] tablet:h-[230px]">
           <Image
-          className="h-full"
+          className="h-full rounded"
           style={{objectFit: "cover"}}
             src="/homepage/aboutPreview.png"
             alt="About-Preview"

@@ -4,7 +4,8 @@ import { GoArrowRight } from "react-icons/go";
 
 const ServicePreviewCard = ({ data }) => {
   return (
-    <div className="flex justify-center items-center p-8 max-w-[396px] h-[297px] border-[1px] border-solid border-[#DFE5EC]">
+    <Link href={data.route}>
+    <div className="flex justify-center items-center p-8 max-w-[396px] h-[297px] rounded hover:border-2 hover:border-transparent bg-card-Border border-[1px] border-solid border-[#DFE5EC]">
       <div className="flex flex-col justify-between items-start w-full h-full">
         <div className="flex flex-col gap-9 items-start justify-start">
           <div>
@@ -21,15 +22,16 @@ const ServicePreviewCard = ({ data }) => {
         </div>
         <div className="flex justify-between items-center w-full">
           <h6>Learn More</h6>
-          <Link href={data.route}>
+          
           <div className="flex justify-center items-center w-10 h-10 border-[1px] border-solid border-[#DFE5EC]">
             <GoArrowRight size={24} />
           </div>
-          </Link>
+      
 
         </div>
       </div>
     </div>
+        </Link>
   );
 };
 

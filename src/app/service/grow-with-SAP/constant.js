@@ -55,6 +55,7 @@ export const CapabilityData={
 
 
 export const BenefitsData={
+title:"Benefits of Grow with SAP",
 imgSrc:"/Services/grow-with-SAP/Benefits.png",
 eachBenefit:[
     {

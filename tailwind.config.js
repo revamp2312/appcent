@@ -22,7 +22,10 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
           "primary-btn-bg":"linear-gradient(95deg, #EC622B 0%, #F39D43 100%)",
           "infocentric-bg":"linear-gradient(140deg, #15C 0%, #6E8CFC 100%)",
-          "Service-CapabilityMeshBg":"url(/Services/capabilityBg.png)"
+          "blink-logo-bg":" linear-gradient(90deg, #6D3DD3 0%, #A021C0 100%)",
+          "Service-CapabilityMeshBg":"url(/Services/capabilityBg.png)",
+          "testimonialBg":"linear-gradient(109deg, #FFFCF9 0%, rgba(255, 255, 255, 0.60) 100.01%)"
+
       },
       boxShadow:{
         "ctaBannerBoxShadow":"0px 4px 50px 0px rgba(42, 42, 42, 0.08)",
@@ -33,10 +36,14 @@ module.exports = {
       },
       textColor:{
         "keyPointIconColor":"linear-gradient(95deg, #EC622B 0%, #F39D43 100%)",
+      },
+      colors:{
+          "primary-btn-bg-color":"linear-gradient(95deg, #EC622B 100%, #FFB60D 100%)"
+      },
+      backgroundColor:{
+          "card-Border":"linear-gradient(white, white) padding-box padding-box, linear-gradient(45deg, rgb(108, 82, 227), rgb(232, 77, 150)) border-box border-box;",
+
       }
-      // colors:{
-      //     "primary-btn-bg":"linear-gradient(95deg, #EC622B 0%, #F39D43 100%)"
-      // }
     },
   },
   plugins: [],

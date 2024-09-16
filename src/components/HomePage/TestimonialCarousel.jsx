@@ -10,6 +10,9 @@ const TestimonialCarousel = () => {
   const GotoNextSlide = () => {
     emblaApi.scrollNext();
   };
+  const GotoPrevSlide = () => {
+    emblaApi.scrollPrev();
+  };
   return (
     <section id="testimonial-Section" className="embla">
       <div className="embla__viewport" ref={emblaRef}>
@@ -18,7 +21,7 @@ const TestimonialCarousel = () => {
             <FirstSlide gotoNextSlide={GotoNextSlide} />
           </div>
           <div className="embla__slide">
-            <SecondSlide gotoNextSlide={GotoNextSlide} />
+            <SecondSlide gotoPrevSlide={GotoPrevSlide} />
           </div>
         </div>
       </div>

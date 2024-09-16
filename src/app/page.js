@@ -11,7 +11,7 @@ export default function Home() {
   return (
 <div className=" bg-[var(--background-color)">
 <HomeHero />
-<Client />
+<Client bgColor="white"/>
 <AboutPreview />
 <ServicePreview />
 <TestimonialSection />

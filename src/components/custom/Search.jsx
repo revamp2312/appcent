@@ -23,8 +23,9 @@ export function Search() {
   }, 300);
 
   return (
-    <div>
+    <div className="w-full">
       <input
+      className="w-full py-4 pl-9"
         type="text"
         placeholder="Search for blogs, news, and updates"
         onChange={(e) => handleSearch(e.target.value)}

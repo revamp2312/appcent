@@ -43,7 +43,7 @@ const EmployeeTestimonialCarousel = () => {
         <div className="embla__container">
           {employeetestimonialData.map((each, index) => (
             <div className="embla__slide" key={index}>
-              <div className="flex justify-center items-center p-6 laptop:p-12 bg-white min-h-[298px]">
+              <div className="flex justify-center items-center p-6 laptop:p-12 bg-white min-h-[298px] rounded">
                 <div className="flex flex-col gap-6 justify-center items-start">
                   <div className="flex flex-col gap-2 justify-center items-start">
                     <Image

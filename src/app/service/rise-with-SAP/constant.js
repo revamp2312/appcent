@@ -55,6 +55,7 @@ export const CapabilityData={
 
 
 export const BenefitsData={
+    title:"Benefits of Rise with SAP",
     imgSrc:"/Services/rise-with-SAP/Benefits.png",
     eachBenefit:[
     {

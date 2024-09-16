@@ -48,10 +48,10 @@ const InsightPreviewCarousel = () => {
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-medium">
+                    <h4 className="font-medium">
                       Alfamart Pilots Agility and Resilience Across its People,
                       Process, and Technology
-                    </h3>
+                    </h4>
                   </div>
                 </div>
               </div>

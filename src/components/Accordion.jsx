@@ -23,12 +23,12 @@ const Accordion = ({ data, openAcc,closeAcc, open }) => {
             <div>
               <h6 className="text-[var(--text-color)]">{data.description}</h6>
             </div>
-            <Link href={data.redirectUrl}>
+            {/* <Link href={data.redirectUrl}>
               <div className="flex gap-2 justify-start items-center text-[var(--accent-color)]">
                 <h6 className="font-bold">Learn More</h6>
                 <FaArrowRight />
               </div>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

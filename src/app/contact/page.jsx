@@ -8,7 +8,7 @@ const Contact = () => {
     <div>
       <ContactHero />
       <ContactInfo />
-      <Client />
+      <Client bgColor="#FFF7EF" />
     </div>
   )
 }

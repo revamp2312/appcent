@@ -15,7 +15,7 @@ const page = () => {
       <Capabilities data={CapabilityData}/>
       <Benefits data={BenefitsData}/>
       <VideoSection data={VideoSectionData} />
-      <PackageDownloadFormContainer />
+      <PackageDownloadFormContainer subtitle="Download your copy of SAP Grow Starter Package here"/>
       <ServiceCTA />
     </div>
   )

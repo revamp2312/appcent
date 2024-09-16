@@ -20,9 +20,9 @@ const serviceRoutes=[
 
 const ServiceCardContainer = () => {
   return (
-    <div className="flex justify-center items-center m-auto w-full  py-12">
+    <div className="flex justify-center items-center m-auto w-full">
       <div className="w-full max-w-[1440px] flex flex-col justify-center items-center gap-16">
-            <div><h2>Service</h2></div>
+            <div><h2>Services</h2></div>
             <div className="flex justify-center items-center flex-wrap  gap-6">
                 {serviceRoutes.map((eachCard,index)=>{
                     return <ServicePreviewCard key={index} data={eachCard} />

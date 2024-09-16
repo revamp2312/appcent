@@ -55,6 +55,7 @@ export const CapabilityData={
 
 
 export const BenefitsData={
+    title:"Benefits of SAP BTP",
     imgSrc:"/Services/buisness-technology-platform/Benefits.png",
     eachBenefit:[
     {

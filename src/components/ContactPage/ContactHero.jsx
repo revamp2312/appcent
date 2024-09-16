@@ -11,8 +11,8 @@ const ContactHero = () => {
                 <h2>Building A Great Company Takes Time. We&apos;re Here to Support Your Journey.</h2>
                 <p>We can&apos;t wait to hear from you. Talk to us today.</p>
             </div>
-            <div>
-                <Image src="/contactPageImages/ContactHero.png" width={576} height={266} alt="Contact-Hero" />
+            <div className="w-full">
+                <Image className="w-full" src="/contactPageImages/ContactHero.png" width={576} height={266} alt="Contact-Hero" />
             </div>
         </div>
         <div>

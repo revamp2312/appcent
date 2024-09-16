@@ -27,14 +27,14 @@ const CtaBanner = ({ data }) => {
         </div>
         <div className="flex justify-center items-center w-full bg-primary-btn-bg rounded-b-lg">
           <div className="flex flex-col flex-[3] justify-between items-start px-6 w-full laptop:flex-row laptop:items-center">
-            <div className="flex gap-4 justify-center items-center text-white px-6 py-4">
+            <div className="flex gap-4 justify-center items-center text-white tablet:px-6 py-4">
               <div className="w-6 h-6"><MdEmail size={24}/></div>
               <div className="flex flex-col gap-1 text-white">
                 <h6 className="text-white font-semibold">Email address</h6>
                 <h6 className="text-white">info@appcentric.ph</h6>
               </div>
             </div>
-            <div className="flex gap-4 justify-center items-center text-white px-6 py-4">
+            <div className="flex gap-4 justify-center items-center text-white tablet:px-6 py-4">
               <div><FaPhone size={24} /></div>
               <div className="flex flex-col gap-1">
                 <h6 className="text-white font-semibold">Contact us</h6>
@@ -42,7 +42,7 @@ const CtaBanner = ({ data }) => {
                 <h6 className="text-white">Weekdays 9am to 6pm GMT+8</h6>
               </div>
             </div>
-            <div className="flex gap-4 justify-center items-center text-white px-6 py-4">
+            <div className="flex gap-4 justify-center items-center text-white tablet:px-6 py-4">
               <div><IoPerson size={24} /></div>
               <div className="flex flex-col gap-1">
                 <h6 className="text-white font-semibold">Sales inquiries</h6>
