@@ -6,7 +6,7 @@ import ServiceCardContainer from "./ServiceCardContainer";
 
 const ServicePreview = () => {
   return (
-    <div className="flex flex-col gap-12 tablet:gap-20 justify-center items-center m-auto w-full px-6 tablet:px-14 laptop:px-[70px] py-12 laptop:py-20">
+    <div id="servicePreview" className="flex flex-col gap-12 tablet:gap-20 justify-center items-center m-auto w-full px-6 tablet:px-14 laptop:px-[70px] py-12 laptop:py-20">
       <div><ServiceCardContainer /></div>
       <div className="w-full max-w-[1440px] flex flex-col justify-center items-center laptop:items-start gap-12 laptop:flex-row">
         <div className="flex flex-col gap-14 justify-center items-start laptop:max-w-[612px] w-full">

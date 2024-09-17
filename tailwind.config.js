@@ -24,8 +24,8 @@ module.exports = {
           "infocentric-bg":"linear-gradient(140deg, #15C 0%, #6E8CFC 100%)",
           "blink-logo-bg":" linear-gradient(90deg, #6D3DD3 0%, #A021C0 100%)",
           "Service-CapabilityMeshBg":"url(/Services/capabilityBg.png)",
-          "testimonialBg":"linear-gradient(109deg, #FFFCF9 0%, rgba(255, 255, 255, 0.60) 100.01%)"
-
+          "testimonialBg":"linear-gradient(109deg, #FFFCF9 0%, rgba(255, 255, 255, 0.60) 100.01%)",
+"card-Border":"linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1",
       },
       boxShadow:{
         "ctaBannerBoxShadow":"0px 4px 50px 0px rgba(42, 42, 42, 0.08)",
@@ -41,7 +41,6 @@ module.exports = {
           "primary-btn-bg-color":"linear-gradient(95deg, #EC622B 100%, #FFB60D 100%)"
       },
       backgroundColor:{
-          "card-Border":"linear-gradient(white, white) padding-box padding-box, linear-gradient(45deg, rgb(108, 82, 227), rgb(232, 77, 150)) border-box border-box;",
 
       }
     },

@@ -16,14 +16,14 @@ const SideBar = ({ open }) => {
         <div className="flex justify-center items-center px-6 pb-12 tablet:px-14 tablet:pt-6 w-full laptop:hidden">
           <div className="flex flex-col justify-center items-center gap-6 w-full ">
             <div className="flex flex-col justify-center items-start w-full">
-            <Link href="/">
+            <Link className="w-full" href="/">
               <div className="p-4 flex justify-start items-center border-b-[1px] border-solid border-[#F1F1F1] w-full">
               <h6 className="font-medium text-[var(--text-color)]">Home</h6>
               </div>
            
             </Link>
              
-              <Link href="/about">
+              <Link className="w-full" href="/about">
               <div className="p-4 flex justify-start items-center border-b-[1px] border-solid border-[#F1F1F1] w-full">
               <h6 className="font-medium text-[var(--text-color)]">About Us</h6>
               </div>
@@ -35,7 +35,7 @@ const SideBar = ({ open }) => {
                 }}
                 className="w-full"
               >
-                <div className="p-4 flex justify-start items-center border-b-[1px] border-solid border-[#F1F1F1] w-full">
+                <div  className={`p-4 flex justify-between items-center ${openSideBarSevice?"": "border-b-[1px] border-solid border-[#F1F1F1]"}w-full`}>
                 <h6 className="font-medium text-[var(--text-color)]">Service</h6>
                   {openSideBarSevice ?<MdOutlineKeyboardArrowUp size={24} color="#EC622B"/>:<MdOutlineKeyboardArrowDown size={24} />}
                 </div>
@@ -46,9 +46,9 @@ const SideBar = ({ open }) => {
                 )}
               </div>
 
-              <Link href="/insight">
+              <Link className="w-full" href="/insight">
               <div className="p-4 flex justify-start items-center border-b-[1px] border-solid border-[#F1F1F1] w-full">
-              <h6 className="font-medium text-[var(--text-color)]">Insight</h6>
+              <h6 className="font-medium text-[var(--text-color)]">Insights</h6>
               </div>
            
             </Link>
@@ -56,7 +56,7 @@ const SideBar = ({ open }) => {
 
             <div className="w-full">
               <Link href="/contact" className="w-full">
-                <div className="rounded px-6 py-3 bg-primary-btn-bg text-white font-bold w-full text-center">
+                <div className="rounded px-6 py-4 bg-primary-btn-bg text-white font-bold w-full text-center">
                   Contact us
                 </div>
               </Link>

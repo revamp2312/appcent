@@ -16,7 +16,7 @@ export const ctaBannerData=[
         subtitle:"Discover a culture of innovation, growth, and collaboration where your talents thrive and your career aspirations are nurtured.",
         img:ctaBanner2,
         btnText:"View current openings",
-        btnHref:"/"
+        btnHref:"https://jobs.recooty.com/centric-group?page=2"
     }
 
 ]

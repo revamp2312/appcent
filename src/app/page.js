@@ -7,7 +7,22 @@ import ServicePreview from "@/components/HomePage/ServicePreview";
 import TestimonialSection from "@/components/HomePage/TestimonialSection";
 import { ctaBannerData } from "@/utils/cta-banner";
 
-export default function Home() {
+
+
+export async function getBlogData() {
+  try {
+    const url = new URL("/api/blogs/?populate=*", "http://localhost:1337");
+ 
+    const res = await fetch(url.href);
+    const repo = await res.json();
+    return repo;
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+export default async  function  Home() {
+  const blogData = await getBlogData();
   return (
 <div className=" bg-[var(--background-color)">
 <HomeHero />
@@ -15,7 +30,7 @@ export default function Home() {
 <AboutPreview />
 <ServicePreview />
 <TestimonialSection />
-<InsightPreview />
+<InsightPreview  blogData={blogData}/>
 <CtaBanner data={ctaBannerData[0]} />
 </div>
   );

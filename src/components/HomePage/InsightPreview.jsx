@@ -3,7 +3,7 @@ import React from 'react'
 import { FaArrowRightLong } from 'react-icons/fa6'
 import InsightPreviewCarousel from './InsightPreviewCarousel'
 
-const InsightPreview = () => {
+const InsightPreview = ({blogData}) => {
   return (
     <div className="flex justify-center items-center m-auto w-full px-6 tablet:px-14 laptop:px-[70px] py-12 laptop:py-20">
       <div className="w-full max-w-[1440px] flex flex-col justify-center items-center gap-12">
@@ -13,7 +13,7 @@ const InsightPreview = () => {
                     <div><p>Explore the Latest in SAP Solutions, Success Stories, and Technological Breakthroughs</p></div>
                 </div>
                 <div className="w-full">
-                    <InsightPreviewCarousel />
+                    <InsightPreviewCarousel blogData={blogData} />
                 </div>
             </div>
             <div>

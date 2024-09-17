@@ -16,12 +16,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <NavBar />
-        <SideBar />
-        {/* <ServiceDropdown /> */}
-        {children}
-        <Footer />
-        </body>
+        <div className="reative">
+          <div className="sticky top-0 w-full z-[40]">
+            <NavBar />
+          </div>
+          <SideBar />
+          {children}
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }

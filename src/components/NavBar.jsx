@@ -10,18 +10,22 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { useSideBar } from "@/hooks/useSIdeBar";
 import SideBar from "./SideBar";
 import { RxCross2 } from "react-icons/rx";
+import { usePathname } from "next/navigation";
+
 
 
 const NavBar = () => {
   const [openDropdown,setOpenDropdown]=useState(false)
   const {openSideBar,setOpenSideBar} =useSideBar()
+  const pathname = usePathname();
+  
   return (
     <>
-    <div className="bg-[var(--background-color)] h-[70px] tablet:h-[90px] w-full m-auto flex justify-center items-center relative ">
-      <div className="flex justify-between items-center px-6 tablet:px-14 laptop:px-[70px]   max-w-[1440px] w-full">
+    <div className=" bg-[var(--background-color)] h-[70px] tablet:h-[90px] w-full m-auto flex justify-center items-center relative ">
+      <div className="flex justify-between items-center px-6 tablet:px-14 laptop:px-[70px] max-w-[1440px] w-full">
         <Link href="/">
           <Image
-            src="/appcentric-black-logo.png"
+            src="/appcentricLogo.png"
             alt="Appcentric Logo"
             width={188}
             height={62}
@@ -29,13 +33,15 @@ const NavBar = () => {
         </Link>
         <div className="hidden laptop:flex justify-center items-center">
           <div className="flex justify-center items-center gap-6">
-            <Link href="/">
-              <h6 className="font-medium text-[var(--text-color)]">Home</h6>
+            <Link className="relative" href="/">
+              <h6 className="font-medium text-[var(--text-color)] hover:text-[var(--accent-color)]">Home</h6>
+              <div className={pathname == "/" ? "absolute rounded-t -bottom-4 h-1 w-full bg-[var(--accent-color)]" : ""} ></div>
             </Link>
-            <Link href="/about">
-              <h6 className="font-medium text-[var(--text-color)]">About Us</h6>
+            <Link className="relative"  href="/about">
+              <h6 className="font-medium text-[var(--text-color)] hover:text-[var(--accent-color)]">About Us</h6>
+              <div className={pathname == "/about" ? "absolute rounded-t -bottom-4 h-1 w-full bg-[var(--accent-color)]" : ""} ></div>
             </Link>
-            <div onClick={()=>{setOpenDropdown(!openDropdown)}} className="relative flex justify-center items-center cursor-pointer ">
+            <div onClick={()=>{setOpenDropdown(!openDropdown)}} className="relative flex justify-center items-center cursor-pointer">
               <h6 className={`font-medium ${openDropdown?"text-[var(--accent-color)]":"text-[var(--text-color)]"}`}>Services</h6>
               {openDropdown ?<MdOutlineKeyboardArrowUp size={24} color="#EC622B"/>:<MdOutlineKeyboardArrowDown size={24} />}
             { openDropdown && <div className="absolute top-[72px] right-0 left-[50%] mr-auto ml-auto w-[398px] translate-x-[-50%]">
@@ -43,8 +49,9 @@ const NavBar = () => {
               </div>}
             </div>
 
-            <Link href="/insight">
-              <h6 className="font-medium text-[var(--text-color)]">Insights</h6>
+            <Link className="relative" href="/insight">
+              <h6 className="font-medium text-[var(--text-color)] hover:text-[var(--accent-color)]">Insights</h6>
+              <div className={pathname == "/insight" ? "absolute rounded-t -bottom-4 h-1 w-full bg-[var(--accent-color)]" : ""} ></div>
             </Link>
 
             <Link href="/contact">

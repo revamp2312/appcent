@@ -6,7 +6,10 @@ import AutoScroll from "embla-carousel-auto-scroll";
 import "./InsightPreviewCarousel.css";
 
 import Image from "next/image";
-const InsightPreviewCarousel = () => {
+import Link from "next/link";
+const InsightPreviewCarousel = ({blogData}) => {
+  console.log(blogData);
+  
   const OPTIONS = { loop: true };
   const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS, [
     AutoScroll({
@@ -27,17 +30,22 @@ const InsightPreviewCarousel = () => {
     <div id="InsightPreview-Section" className="embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {insightDummyData.map((eachInsight, index) => {
+          {blogData?.data.map((eachInsight, index) => {
             return (
-              <div className="embla__slide w-[392px]" key={index}>
+              <Link  key={index} href={`/blog/${eachInsight?.attributes.slug}`}>
+            
+              <div className="embla__slide w-[392px] h-full">
+                <div className="h-[218px] laptop:h-[279px]  w-full">
                 <Image
                   key={index}
-                  className="embla__slide__img object-cover h-[220px]"
-                  src={eachInsight.imgSrc}
+                  className="embla__slide__img h-full w-full object-cover rounded-t"
+                  src={"http://127.0.0.1:1337"+eachInsight?.attributes?.imgSrc?.data?.attributes?.url}
                   alt="Logo"
                   width={392}
                   height={220}
                 />
+                </div>
+           
                 <div className="flex flex-col gap-4 p-6 border-[1px] border-solid border-[#E8E7EE] rounded-t-none rounded-b-[4px] ">
                   <div className="flex justify-between items-center">
                     <div>
@@ -49,17 +57,18 @@ const InsightPreviewCarousel = () => {
                   </div>
                   <div>
                     <h4 className="font-medium">
-                      Alfamart Pilots Agility and Resilience Across its People,
-                      Process, and Technology
+                   {eachInsight?.attributes?.title}
                     </h4>
                   </div>
                 </div>
               </div>
+              </Link>
             );
           })}
         </div>
       </div>
     </div>
+  
   );
 };
 

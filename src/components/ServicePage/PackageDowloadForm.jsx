@@ -18,7 +18,7 @@ const PackageDowloadForm = () => {
         <div className="flex flex-col gap-6 w-full">
           <div className="flex flex-col gap-5 justify-center items-center w-full laptop:flex-row">
           <div className="flex flex-1 flex-col gap-2 w-full">
-            <label htmlFor="">Name</label>
+            <label htmlFor="">Name*</label>
             <input
               required
               name="name"

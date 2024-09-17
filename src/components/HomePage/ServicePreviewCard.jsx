@@ -5,7 +5,7 @@ import { GoArrowRight } from "react-icons/go";
 const ServicePreviewCard = ({ data }) => {
   return (
     <Link href={data.route}>
-    <div className="flex justify-center items-center p-8 max-w-[396px] h-[297px] rounded hover:border-2 hover:border-transparent bg-card-Border border-[1px] border-solid border-[#DFE5EC]">
+    <div className="flex justify-center items-center p-8 max-w-[396px] h-[297px] rounded hover:border-2  hover:border-[var(--accent-color)] border-[1px] border-solid border-[#DFE5EC]">
       <div className="flex flex-col justify-between items-start w-full h-full">
         <div className="flex flex-col gap-9 items-start justify-start">
           <div>
