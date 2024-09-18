@@ -96,7 +96,7 @@ export const KeyPointCard2 = () => {
         </div>
         <div className="flex flex-col gap-2 justify-start items-start">
         <div><h4>Global Expansion</h4></div>
-        <div><p>Having established a strong presence in the Philippines, Appcentric has expanded its operations to Sydney, Australia, and is planning further expansion into other emerging markets in Asia.</p></div>
+        <div><p>Having established a strong presence in the Philippines, Appcentric is expanding its operations into other emerging markets in Asia.</p></div>
         </div>
         <div className="flex justify-end items-center w-full">
          <Image className="w-full" src="/KeyPointsBg/KeyPoint4Img.png" alt="key-point" width={386} height={343} />
