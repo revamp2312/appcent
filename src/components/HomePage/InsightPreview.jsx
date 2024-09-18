@@ -18,7 +18,7 @@ const InsightPreview = ({blogData}) => {
             </div>
             <div>
             <Link href="/insight">
-          <div className="flex justify-center items-center gap-[10px] rounded px-6 py-3  border-[1px] border-solid border-[var(--accent-color)] text-[var(--accent-color)] font-bold">
+          <div className="flex justify-center items-center gap-[10px] rounded hover:bg-primary-btn-bg hover:text-white px-6 hover:px-7 transition-all duration-300 py-3  border-[1px] border-solid border-[var(--accent-color)] text-[var(--accent-color)] font-bold">
           <div >View all insights</div>
           <FaArrowRightLong />
           </div></Link>

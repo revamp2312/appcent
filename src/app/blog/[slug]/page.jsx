@@ -1,6 +1,7 @@
 import Image from "next/image";
 import CtaBanner from "@/components/CtaBanner";
 import { ctaBannerData } from "@/utils/cta-banner";
+import ArticleBreadCrumb from "@/components/InsightPage/ArticleBreadCrumb";
 
 
 export async function getBlog(slug) {
@@ -25,7 +26,7 @@ const ArticlePage = async ({ params }) => {
     <div className="flex justify-center items-center m-auto w-full px-6 tablet:px-14 laptop:px-[70px] py-12">
       <div className="w-full max-w-[1440px] flex flex-col justify-center items-center gap-12">
         <div className="flex flex-col gap-4 justify-center items-center">
-        
+        <ArticleBreadCrumb blogData={blogData}/>
           <div className="flex justify-center items-center text-center">
             <h2>{blogData?.data?.attributes?.title}</h2>
           </div>

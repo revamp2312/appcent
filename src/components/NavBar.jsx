@@ -7,7 +7,6 @@ import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { useSideBar } from "@/hooks/useSIdeBar";
 import SideBar from "./SideBar";
 import { RxCross2 } from "react-icons/rx";
 import { usePathname } from "next/navigation";
@@ -17,7 +16,7 @@ import { useEffect } from "react";
 
 const NavBar = () => {
   const [openDropdown,setOpenDropdown]=useState(false)
-  const {openSideBar,setOpenSideBar} =useSideBar()
+  const [openSideBar,setOpenSideBar]=useState(false)
   const pathname = usePathname();
 
   useEffect(()=>{
@@ -47,8 +46,8 @@ const NavBar = () => {
               <h6 className="font-medium text-[var(--text-color)] hover:text-[var(--accent-color)]">About Us</h6>
               <div className={pathname == "/about" ? "absolute rounded-t -bottom-4 h-1 w-full bg-[var(--accent-color)]" : ""} ></div>
             </Link>
-            <div onClick={()=>{setOpenDropdown(!openDropdown)}} className="relative flex justify-center items-center cursor-pointer">
-              <h6 className={`font-medium ${openDropdown?"text-[var(--accent-color)]":"text-[var(--text-color)]"}`}>Services</h6>
+            <div  onClick={()=>{setOpenDropdown(!openDropdown)}} className="relative flex justify-center items-center cursor-pointer">
+              <h6 onMouseEnter={()=>{setOpenDropdown(true)}}  className={`font-medium ${openDropdown?"text-[var(--accent-color)]":"text-[var(--text-color)]"}`}>Services</h6>
               {openDropdown ?<MdOutlineKeyboardArrowUp size={24} color="#EC622B"/>:<MdOutlineKeyboardArrowDown size={24} />}
             { openDropdown && <div className="absolute top-[72px] right-0 left-[50%] mr-auto ml-auto w-[398px] translate-x-[-50%]">
                 <ServiceDropdown />
@@ -67,7 +66,7 @@ const NavBar = () => {
             </Link>
           </div>
         </div>
-        <div onClick={()=>{setOpenSideBar(!openSideBar)}} className="flex justify-center items-center laptop:hidden">
+        <div onClick={()=>{setOpenSideBar(!openSideBar)}} className="flex justify-center items-center cursor-pointer laptop:hidden ">
          {openSideBar?<RxCross2 size={24} />: <RxHamburgerMenu size={24} />}
         </div>
       </div>

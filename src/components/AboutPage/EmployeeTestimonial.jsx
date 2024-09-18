@@ -13,7 +13,7 @@ const EmployeeTestimonial = () => {
         <div className="flex flex-col justify-center items-center w-full laptop:flex-row">
             <div className="laptop:-mr-12 z-20 w-full"><EmployeeTestimonialCarousel /></div>
             <div className="z-10 w-full">
-                <Image className="w-full" src="/EmployeeTestimonials/EmployeeTestimonialImg.png" alt="EmployeeTestimonialImg" width={612} height={404} />
+                <Image className="w-full rounded-b laptop:rounded" src="/EmployeeTestimonials/EmployeeTestimonialImg.png" alt="EmployeeTestimonialImg" width={612} height={404} />
             </div>
         </div>
 
