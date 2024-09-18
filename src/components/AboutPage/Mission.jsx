@@ -22,7 +22,7 @@ const Mission = () => {
           <Image
           className="h-full rounded"
           style={{objectFit: "cover"}}
-            src="/homepage/aboutPreview.png"
+            src="/aboutuspage/aboutPreview.png"
             alt="About-Preview"
             width={1440}
             height={230}

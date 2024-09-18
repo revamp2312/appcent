@@ -11,6 +11,7 @@ import { useSideBar } from "@/hooks/useSIdeBar";
 import SideBar from "./SideBar";
 import { RxCross2 } from "react-icons/rx";
 import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 
 
 
@@ -18,13 +19,18 @@ const NavBar = () => {
   const [openDropdown,setOpenDropdown]=useState(false)
   const {openSideBar,setOpenSideBar} =useSideBar()
   const pathname = usePathname();
+
+  useEffect(()=>{
+    setOpenSideBar(false)
+  },[pathname])
   
   return (
     <>
     <div className=" bg-[var(--background-color)] h-[70px] tablet:h-[90px] w-full m-auto flex justify-center items-center relative ">
       <div className="flex justify-between items-center px-6 tablet:px-14 laptop:px-[70px] max-w-[1440px] w-full">
-        <Link href="/">
+        <Link className="h-[48px] tablet:h-[62px]" href="/">
           <Image
+          className="w-full h-full"
             src="/appcentricLogo.png"
             alt="Appcentric Logo"
             width={188}

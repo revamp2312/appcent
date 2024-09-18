@@ -50,8 +50,9 @@ CgCompanies = () => {
         </div>
         <div className="w-full laptop:w-[294px] flex flex-col justify-between items-center gap-9 p-6 bg-[#FBFBFF] rounded h-full min-h-[342px] border border-solid border-[#EFEFEF] ">
           <div className="flex flex-col gap-9 justify-start items-center">
-          <div>
+          <div className="w-[90px]">
             <Image
+              className="w-full"
               src="/blink-logo.png"
               alt="Blink-Logo"
               width={78}

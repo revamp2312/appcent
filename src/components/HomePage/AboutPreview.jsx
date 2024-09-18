@@ -13,7 +13,6 @@ const AboutPreview = () => {
             alt="About-Preview"
             style={{ objectFit: "cover" }}
             width={1440}
-            sizes="(max-height: 768px) 150px, (max-width: 1200px) 230px, 230px"
             height={500}
           />
         </div>
@@ -36,9 +35,9 @@ const AboutPreview = () => {
                 the realm of unprecedented success.
               </p>
             </div>
-            <div className="flex gap-2 justify-start items-center">
+            <div className="w-full flex flex-col gap-2 justify-center items-center tablet:justify-start tablet:flex-row">
             <Link href="/about" ><div className="rounded px-6 py-4 bg-primary-btn-bg text-white font-bold w-full text-center">Know more about us</div></Link>
-              <Link target="blank" download href="/pdf/AppcentricProfile.pdf">
+              <Link target="blank"  href="/pdf/AppcentricProfile.pdf">
                 <div className="flex justify-center items-center gap-[10px] rounded px-6 py-3 bg-[var(--primary-color)]  text-[var(--accent-color)] font-bold">
                   <div>Download our company profile</div>
                   <GoArrowUpRight />

@@ -1,10 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
-import { RiArrowRightSLine } from "react-icons/ri";
-import { truncate } from "lodash";
 import CtaBanner from "@/components/CtaBanner";
 import { ctaBannerData } from "@/utils/cta-banner";
-
 
 
 export async function getBlog(slug) {
@@ -19,11 +15,9 @@ export async function getBlog(slug) {
   }
 }
 
-const page = async ({ params }) => {
+const ArticlePage = async ({ params }) => {
   const blogData = await getBlog(params?.slug);
-  const imgurl =
-    "http://127.0.0.1:1337" +
-    blogData?.data?.attributes?.imgSrc?.data?.attributes?.url;
+  const imgurl = "http://127.0.0.1:1337" +  blogData?.data?.attributes?.imgSrc?.data?.attributes?.url;
   const description = blogData?.data?.attributes?.description;
 
   return (
@@ -31,21 +25,7 @@ const page = async ({ params }) => {
     <div className="flex justify-center items-center m-auto w-full px-6 tablet:px-14 laptop:px-[70px] py-12">
       <div className="w-full max-w-[1440px] flex flex-col justify-center items-center gap-12">
         <div className="flex flex-col gap-4 justify-center items-center">
-          <div className="flex gap-1 justify-center items-center">
-            <Link href={"/insight"}>
-              <h6 className="text-xs tablet:text-base text-nowrap text-[var(--text-color)]">Customer Stories</h6>
-            </Link>
-            <RiArrowRightSLine />
-            <h6 className="text-xs tablet:text-base block laptop:hidden">
-              {truncate(blogData?.data?.attributes?.title, {
-                length: 24,
-                omission: "...",
-              })}
-            </h6>
-            <h6 className="text-xs tablet:text-base hidden laptop:block">
-              {blogData?.data?.attributes?.title}
-            </h6>
-          </div>
+        
           <div className="flex justify-center items-center text-center">
             <h2>{blogData?.data?.attributes?.title}</h2>
           </div>
@@ -78,7 +58,7 @@ const page = async ({ params }) => {
   );
 };
 
-export default page;
+export default ArticlePage;
 
 
 export async function generateMetadata({ params }) {

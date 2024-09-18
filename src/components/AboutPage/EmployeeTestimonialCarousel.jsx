@@ -47,7 +47,7 @@ const EmployeeTestimonialCarousel = () => {
                 <div className="flex flex-col gap-6 justify-center items-start">
                   <div className="flex flex-col gap-2 justify-center items-start">
                     <Image
-                      src="/employeeTestimonials/feeedbackVector.png"
+                      src="/EmployeeTestimonials/feeedbackVector.png"
                       alt="Vector"
                       width={24}
                       height={24}

@@ -1,4 +1,10 @@
 import { CiSettings } from "react-icons/ci";
+import { MdOutlineCloudDone } from "react-icons/md";
+import { IoRocketOutline } from "react-icons/io5";
+import { BsBarChart } from "react-icons/bs";
+import { PiBuildingThin } from "react-icons/pi";
+import { IoIosRefresh } from "react-icons/io";
+import { HiMiniWrenchScrewdriver } from "react-icons/hi2";
 
 export const HeroData = {
   title: " Accelerate Your Midmarket Success",
@@ -19,32 +25,32 @@ export const CapabilityData={
     imgSrc:"/Services/grow-with-SAP/Capability.png",
     eachCapability:[
         {
-            icon:<CiSettings size={24} />, 
+            icon:<MdOutlineCloudDone size={24} />, 
             title:"Cloud-Native ERP",
             description:"Leverage SAP Grow Cloud, public edition, for a state-of-the-art, intelligent ERP system tailored to midmarket needs and scalable for future Growth."
         },
         {
-            icon:<CiSettings size={24}  />, 
+            icon:<IoRocketOutline size={24}  />, 
             title:"Rapid Deployment Framework",
             description:"Implement quickly with preconfigured best practices and fixed-scope implementations, dramatically reducing time-to-value."
         },
         {
-            icon:<CiSettings size={24}  />, 
+            icon:<BsBarChart size={24}  />, 
             title:"Embedded Intelligence",
             description:"Make data-driven decisions with AI and advanced analytics capabilities integrated throughout the solution, providing real-time insights and automation."
         },
         {
-            icon:<CiSettings size={24}  />, 
+            icon:<PiBuildingThin size={24}  />, 
             title:"Industry-Specific Solutions",
             description:"Benefit from preconfigured, industry-specific best practices that address the unique challenges and opportunities in your sector."
         },
         {
-            icon:<CiSettings size={24}  />, 
+            icon:<IoIosRefresh size={24}  />, 
             title:"Continuous Innovation",
             description:"Stay ahead with quarterly updates that bring the latest technologies and innovations directly to your business without disruptive upgrades."
         },
         {
-            icon:<CiSettings size={24} />, 
+            icon:<HiMiniWrenchScrewdriver size={24} />, 
             title:"Comprehensive Support",
             description:"Access end-to-end support, including implementation assistance, user enablement, and ongoing technical support to ensure your success."
         },

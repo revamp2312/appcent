@@ -1,4 +1,10 @@
 import { CiSettings } from "react-icons/ci";
+import { PiBrainDuotone } from "react-icons/pi";
+import { LuBarChart4 } from "react-icons/lu";
+import { MdOutlineCloudDone } from "react-icons/md";
+import { LiaNetworkWiredSolid } from "react-icons/lia";
+import { PiLeafLight } from "react-icons/pi";
+import { HiOutlineWrenchScrewdriver } from "react-icons/hi2";
 
 export const HeroData = {
   title: "Elevate Your Business to New Heights",
@@ -19,32 +25,32 @@ export const CapabilityData={
     imgSrc:"/Services/rise-with-SAP/Capability.png",
     eachCapability:[
         {
-            icon:<CiSettings size={24} />, 
+            icon:<PiBrainDuotone size={24} />, 
             title:"Intelligent ERP",
             description:"Leverage SAP Rise Cloud for a next-generation ERP system that provides real-time insights and intelligent automation across your entire business."
         },
         {
-            icon:<CiSettings size={24}  />, 
+            icon:<LuBarChart4 size={24}  />, 
             title:"Business Process Intelligence",
             description:"Analyze, improve, and transform your business processes with AI-powered tools that identify inefficiencies and suggest optimizations."
         },
         {
-            icon:<CiSettings size={24}  />, 
+            icon:<MdOutlineCloudDone size={24}  />, 
             title:"Cloud Infrastracture",
             description:"Choose from a range of leading hyperscalers to host your SAP solutions, ensuring flexibility, scalability, and performance."
         },
         {
-            icon:<CiSettings size={24}  />, 
+            icon:<LiaNetworkWiredSolid size={24}  />, 
             title:"SAP Business Network",
             description:"Connect with customers, suppliers, and partners through the world's largest business network, facilitating seamless collaboration and transactions."
         },
         {
-            icon:<CiSettings size={24}  />, 
+            icon:<PiLeafLight size={24}  />, 
             title:"Sustainability Management",
             description:"Embed sustainability into your core business processes, measure your environmental impact, and drive towards your sustainability goals."
         },
         {
-            icon:<CiSettings size={24} />, 
+            icon:<HiOutlineWrenchScrewdriver size={24} />, 
             title:"Technical Managed Services",
             description:"Benefit from end-to-end support, including cloud operations, infrastructure, and application management, allowing you to focus on innovation rather than maintenance."
         },

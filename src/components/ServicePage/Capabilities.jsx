@@ -5,12 +5,12 @@ const Capabilities = ({data}) => {
   
   
   return (
-    <div className="flex justify-center items-center m-auto w-full px-6 tablet:px-14 laptop:px-[70px] py-12 relative">
-      <div className="w-full max-w-[1440px] flex flex-col  justify-center items-start gap-12 laptop:flex-row">
-        <div className="flex flex-1 flex-col gap-9 items-start justify-start z-20">
+    <div className="flex justify-center items-center m-auto w-full px-6 tablet:px-14 laptop:px-[70px] py-12 ">
+      <div className="w-full max-w-[1440px] flex flex-col  justify-center items-start gap-12 laptop:flex-row relative">
+        <div className="flex flex-1 flex-col gap-9 items-start justify-start z-20 w-full">
           <h2>{data.title}</h2>
           <Image
-          className="rounded-lg"
+          className="rounded-lg w-full"
             src={data.imgSrc}
             alt="Service-Capability"
             width={612}
@@ -25,10 +25,11 @@ const Capabilities = ({data}) => {
           </div>
         </div>
 
-        <div className="absolute hidden left-[-100px] top-[-30%] laptop:bottom-0 z-10 laptop:visible">
-            <Image src="/Services/capabilityBg.png" alt="mesh-bg" width={738} height={738}/>
+        <div className="absolute  laptop:block left-[-100px] top-[-99px]  laptop:top-[0%] bottom-0 z-10 w-[300px] laptop:w-[738px] overflow-hidden ">
+            <Image className="w-full" src="/Services/capabilityBg.png" alt="mesh-bg" width={738} height={308}/>
         </div>
       </div>
+      
     </div>
   );
 };

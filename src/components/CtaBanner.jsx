@@ -21,7 +21,7 @@ const CtaBanner = ({ data }) => {
             </div>
             <div>
               <Link target="blank" href={data.btnHref}>
-                <div className="flex justify-center items-center gap-[10px] rounded px-6 py-2 bg-primary-btn-bg text-white font-bold">
+                <div className="flex justify-center items-center gap-[10px] rounded px-6 py-4 bg-primary-btn-bg text-white font-bold">
                   <div>{data.btnText}</div>
                   <FaArrowRightLong />
                 </div>

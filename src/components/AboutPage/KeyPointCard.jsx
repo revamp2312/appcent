@@ -5,6 +5,7 @@ import { TbPuzzle2 } from "react-icons/tb";
 import { FaGlobe } from "react-icons/fa";
 import { IoIosPeople } from "react-icons/io";
 import Image from "next/image";
+import Link from "next/link";
 
 
 const KeyPointCard = () => {
@@ -65,11 +66,11 @@ export const KeyPointCard2 = () => {
           <div className="flex flex-col gap gap-8">
             <div className="flex flex-col gap-2 ">
             <div><h4>Comprehensive Service Offerings</h4></div>
-            <div><p>Appcentric offers a full spectrum of SAP lifecycle services, including licensing, maintenance, support, implementation, and consulting.</p></div>
+            <div><p>Having established a strong presence in the Philippines, Appcentric is expanding its operations into other emerging markets in Asia.</p></div>
          
             </div>
             <div className="flex gap-2 justify-start items-center">
-            <div><h6>See our SAP Services</h6></div>
+            <Link href="/#servicePreview"><h6 className="font-bold">See our SAP Services</h6></Link>
             <FaArrowRightLong color="#EC622B"/>
             </div>
           </div>
@@ -119,7 +120,7 @@ export const KeyPointCard2 = () => {
         <div><p>The company serves a broad range of industries with solutions that enhance operational efficiencies and decision-making capabilities, tailored to meet the diverse needs of its clients.</p></div>
         </div>
         <div className="flex gap-2 justify-start items-center">
-            <div><h6>Schedule a Consultation</h6></div>
+            <Link href="/contact"><h6 className="font-bold">Schedule a Consultation</h6></Link>
             <FaArrowRightLong color="#EC622B"/>
         </div>
         <div className="flex justify-center items-center w-full">

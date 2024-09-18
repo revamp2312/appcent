@@ -25,14 +25,16 @@ module.exports = {
           "blink-logo-bg":" linear-gradient(90deg, #6D3DD3 0%, #A021C0 100%)",
           "Service-CapabilityMeshBg":"url(/Services/capabilityBg.png)",
           "testimonialBg":"linear-gradient(109deg, #FFFCF9 0%, rgba(255, 255, 255, 0.60) 100.01%)",
-"card-Border":"linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1",
+          "card-Border":"linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1",
+           'gradient-95': 'linear-gradient(95deg, var(--tw-gradient-stops))'
       },
       boxShadow:{
         "ctaBannerBoxShadow":"0px 4px 50px 0px rgba(42, 42, 42, 0.08)",
        "contactFormBoxShadow": "0px 2px 40px 0px rgba(55, 55, 55, 0.08)",
        "awardCardBoxShadow":"0px 4px 20px 0px rgba(82, 82, 82, 0.08)",
        "accordionBoxShadow":"0px 4px 60px 0px rgba(236, 98, 43, 0.12)",
-       "keyPointBoxShadow":"2.932px 2.932px 29.32px 0px rgba(236, 98, 43, 0.12)"
+       "keyPointBoxShadow":"2.932px 2.932px 29.32px 0px rgba(236, 98, 43, 0.12)",
+       "ServiceSmallCTA":" 0px 4px 50px 0px rgba(42, 42, 42, 0.08)"
       },
       textColor:{
         "keyPointIconColor":"linear-gradient(95deg, #EC622B 0%, #F39D43 100%)",

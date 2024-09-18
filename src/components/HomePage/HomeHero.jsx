@@ -12,7 +12,6 @@ const HomeHero = () => {
             <div>
               <h1>
                 Leading the Way in Business Transformation with&nbsp;
-
                 <span className="text-[var(--accent-color)]  tablet:text-nowrap">SAP Innovations
                 </span>
               </h1>

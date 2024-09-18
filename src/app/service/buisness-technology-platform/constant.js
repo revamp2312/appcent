@@ -1,4 +1,10 @@
 import { CiSettings } from "react-icons/ci";
+import { MdOutlineCloudDownload } from "react-icons/md";
+import { BsPuzzle } from "react-icons/bs";
+import { TbDatabaseCog } from "react-icons/tb";
+import { BsBarChartLine } from "react-icons/bs";
+import { TfiSettings } from "react-icons/tfi";
+import { MdOutlineStackedLineChart } from "react-icons/md";
 
 export const HeroData = {
   title: " Innovate Without Limits",
@@ -19,32 +25,32 @@ export const CapabilityData={
     imgSrc:"/Services/buisness-technology-platform/Capability.png",
     eachCapability:[
         {
-            icon:<CiSettings size={24} />, 
+            icon:<MdOutlineCloudDownload size={24} />, 
             title:"Application Development",
             description:"Create custom cloud applications quickly using low-code/no-code tools and professional development environments, supporting various programming languages and frameworks."
         },
         {
-            icon:<CiSettings size={24}  />, 
+            icon:<BsPuzzle size={24}  />, 
             title:"Integration",
             description:"Connect and harmonize processes and data across your entire IT landscape, bridging cloud and on-premise systems seamlessly."
         },
         {
-            icon:<CiSettings size={24}  />, 
+            icon:<TbDatabaseCog size={24}  />, 
             title:"Data Management",
             description:"Manage, analyze, and derive insights from your data with powerful tools for data warehousing, data lakes, and master data management."
         },
         {
-            icon:<CiSettings size={24}  />, 
+            icon:<BsBarChartLine size={24}  />, 
             title:"Analytics",
             description:"Generate actionable insights with embedded analytics, augmented by AI and machine learning capabilities, to support data-driven decision-making."
         },
         {
-            icon:<CiSettings size={24}  />, 
+            icon:<TfiSettings size={24}  />, 
             title:"Artificial Intelligence",
             description:"Implement intelligent technologies like machine learning, chatbots, and robotic process automation to enhance efficiency and drive innovation."
         },
         {
-            icon:<CiSettings size={24} />, 
+            icon:<MdOutlineStackedLineChart size={24} />, 
             title:"Extended Planning and Analysis",
             description:"Unify financial and operational planning processes across your organization, enabling more accurate forecasting and agile decision-making."
         },

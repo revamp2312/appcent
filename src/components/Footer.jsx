@@ -41,7 +41,7 @@ const Footer = () => {
                   About Us
                 </h6>
               </Link>
-              <Link target="blank" download href="/pdf/AppcentricProfile.pdf">
+              <Link target="blank"  href="/pdf/AppcentricProfile.pdf">
                   <h6 className="font-medium text-[var(--text-color)] hover:text-[var(--accent-color)]">Company Profile</h6>
               </Link>
               <Link href="#servicePreview">

@@ -8,7 +8,7 @@ import KeyPointCard, {
 const KeyPoints = () => {
   return (
     <div className="flex justify-center items-center m-auto w-full px-6 tablet:px-14 laptop:px-[70px] py-12 laptop:py-20">
-      <div className="max-w-[1440px] grid gap-6 grid-cols-1  laptop:grid-cols-3 laptop:grid-rows-[590px,171px,601px] w-full h-full">
+      <div className="max-w-[1440px] grid gap-6 grid-cols-1  laptop:grid-cols-3 laptop:grid-rows-[600px,171px,601px] w-full h-full">
         <div className="w-full h-full laptop:col-span-1 laptop:col-start-1 laptop:col-end-2">
           <KeyPointCard />
         </div>

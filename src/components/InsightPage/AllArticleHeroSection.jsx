@@ -17,7 +17,7 @@ const AllArticleHeroSection = ({ blogData}) => {
         </div>
         <div className="flex flex-col gap-6 justify-center items-center laptop:flex-row w-full">
           <div className="w-full laptop:w-[40%] h-full ">
-            <BlogCard blogdata={blogData[34]} />
+            <BlogCard blogdata={blogData[36]} />
           </div>
           <div className="flex flex-col gap-6 justify-center items-center w-full laptop:w-[60%]">
 
