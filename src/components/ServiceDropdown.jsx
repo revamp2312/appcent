@@ -22,7 +22,7 @@ const serviceRoutes=[
 
 const ServiceDropdown = () => {
   return (
-    <div className="flex justify-center items-center laptop:p-6 w-full laptop:max-w-[398px] z-[99] bg-white rounded-2xl">
+    <div className="flex justify-center items-center laptop:p-6 w-full laptop:max-w-[398px] z-[99] laptop:shadow-serviceDropdown bg-white rounded-2xl">
             <div className="flex flex-col gap-[10px] justify-center items-center w-full">
                 {serviceRoutes.map((eachRoute,index)=>{
                     return ( <Link key={index} href={eachRoute.route} className="w-full"> <div  className="flex justify-between items-center py-4 laptop:p-4 w-full hover:bg-[var(--primary-color)] bg-white rounded-md">

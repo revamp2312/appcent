@@ -34,7 +34,8 @@ module.exports = {
        "awardCardBoxShadow":"0px 4px 20px 0px rgba(82, 82, 82, 0.08)",
        "accordionBoxShadow":"0px 4px 60px 0px rgba(236, 98, 43, 0.12)",
        "keyPointBoxShadow":"2.932px 2.932px 29.32px 0px rgba(236, 98, 43, 0.12)",
-       "ServiceSmallCTA":" 0px 4px 50px 0px rgba(42, 42, 42, 0.08)"
+       "ServiceSmallCTA":" 0px 4px 50px 0px rgba(42, 42, 42, 0.08)",
+       "serviceDropdown":"4px 4px 20px 0px rgba(0, 0, 0, 0.20)"
       },
       textColor:{
         "keyPointIconColor":"linear-gradient(95deg, #EC622B 0%, #F39D43 100%)",

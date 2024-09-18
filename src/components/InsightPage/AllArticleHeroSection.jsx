@@ -9,10 +9,10 @@ const AllArticleHeroSection = ({ blogData}) => {
  
   return (
     <div className="flex justify-center items-center m-auto w-full ">
-      <div className="w-full max-w-[1440px] flex flex-col justify-center items-center gap-16">
+      <div className="w-full max-w-[1440px] flex flex-col justify-center items-center gap-8 tablet:gap-16">
       <div className="flex justify-center items-center gap-4 w-full">
             {/* <div className="flex flex-1 h-[1px] w-full bg-[#CDD1DF]"></div> */}
-            <div><h3 className="flex flex-1  text-center">Featured articles</h3></div>
+            <div><h3 className="flex flex-1  text-center text-2xl  tablet:text-[32px]">Featured articles</h3></div>
             <div className="flex flex-1 h-[1px] w-full bg-[var(--accent-color)]"></div>
         </div>
         <div className="flex flex-col gap-6 justify-center items-center laptop:flex-row w-full">
@@ -28,7 +28,7 @@ const AllArticleHeroSection = ({ blogData}) => {
         </div>
         <div className="flex justify-center items-center gap-4 w-full">
             {/* <div className="flex flex-1 h-[1px] w-full bg-[#CDD1DF]"></div> */}
-            <div><h3 className="flex flex-1  text-center">Other articles</h3></div>
+            <div><h3 className="flex flex-1  text-center text-2xl  tablet:text-[32px]">Other articles</h3></div>
             <div className="flex flex-1 h-[1px] w-full bg-[var(--accent-color)]"></div>
         </div>
       </div>

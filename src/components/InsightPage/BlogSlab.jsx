@@ -5,8 +5,8 @@ import { PiArrowCircleRightFill } from 'react-icons/pi'
 const BlogSlab = ({blogData}) => {
   return (
     <div className="flex justify-center items-center rounded-lg border-[1px] border-solid border-[#E8E7EE] w-full">
-              <Link href={`/blog/${blogData?.attributes?.slug}`} className="w-full px-[30px] py-[28px] flex justify-between items-center ">
-              <div className="flex flex-col gap-5 items-start justify-center w-full">
+              <Link href={`/blog/${blogData?.attributes?.slug}`} className="w-full px-4 tablet:px-[30px] py-[28px] flex justify-between items-center ">
+              <div className="flex flex-col gap-4 laptop:gap-5 items-start justify-center w-full">
               <div className="flex justify-start items-center w-full">
                   <div className="text-sm text-[#5B616E]">May 20, 2019  •  2 min read</div>
                 </div>

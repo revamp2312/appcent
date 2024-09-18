@@ -32,7 +32,7 @@ const InsightPreviewCarousel = ({blogData}) => {
         <div className="embla__container">
           {blogData?.data.map((eachInsight, index) => {
             return (
-              <Link  className="border-[1px] border-solid border-[#E8E7EE] rounded-t-none rounded-b-[4px] hover:bg-gradient-95 hover:border-transparent hover:from-[#EC622B] hover:from-0%  hover:to-[#F39D43] hover:to-100% hover:bg-clip-border" key={index} href={`/blog/${eachInsight?.attributes.slug}`}>
+              <Link  className="border-[1px] w-full border-solid border-[#E8E7EE] rounded-t-none rounded-b-[4px] hover:bg-gradient-95 hover:border-transparent hover:from-[#EC622B] hover:from-0%  hover:to-[#F39D43] hover:to-100% hover:bg-clip-border" key={index} href={`/blog/${eachInsight?.attributes.slug}`}>
             
               <div className="embla__slide w-[392px] h-full bg-white">
                 <div className="h-[218px] laptop:h-[279px]  w-full">

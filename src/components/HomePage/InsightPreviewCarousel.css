@@ -19,7 +19,7 @@
   #InsightPreview-Section .embla__slide {
     flex: 0 0 var(--slide-size);
     min-width: 0;
-    padding-left: 0;
+    padding-left: 0
   }
 
   

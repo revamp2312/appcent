@@ -25,8 +25,8 @@ const NavBar = () => {
   
   return (
     <>
-    <div className=" bg-[var(--background-color)] h-[70px] tablet:h-[90px] w-full m-auto flex justify-center items-center relative ">
-      <div className="flex justify-between items-center px-6 tablet:px-14 laptop:px-[70px] max-w-[1440px] w-full">
+    <div className=" bg-[var(--background-color)] h-[70px] tablet:h-[90px] m-auto flex justify-center items-center relative px-6 tablet:px-14 laptop:px-[70px] w-full">
+      <div className="flex justify-between items-center max-w-[1440px] w-full">
         <Link className="h-[48px] tablet:h-[62px]" href="/">
           <Image
           className="w-full h-full"
